@@ -8,6 +8,7 @@ cord = sorted(cords , key=lambda k: [k[0], k[1]])
 
 screen = pygame.display.set_mode((400, 400))
 screen.fill("white")
+pygame.display.set_caption('График')
 
 for i in range(0, len(cords) - 1):
     pygame.draw.line(screen, "red", cord[i], cord[i + 1], width=1)
